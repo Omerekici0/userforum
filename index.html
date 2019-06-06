@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+      <p id="description">
+        How can we improve our site?
+      </p>
+
+      <form id="survey-form" method="GET"
+      action="https://crossorigin.me/https://freecodecamp.com">
+
+      <div class="rowtab">
+        <div class="labels">
+            <label id="name-label" for="name">Name:</label>
+            </div>
+        <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter Your Name" required>
+              </div>
+              </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">Email:</label>
+            </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter Your Email">
+          </div>
+          </div>
+        <div class="rowtab">
+          <div class="labels">
+            <label id="number-label" for="age">Age:</label>
+            </div>
+            <div class="rightTab">
+              <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+              </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label for="currentPos">Which option best describes your anime addiction level?
+              </label>
+              </div>
+          <div class="rightTab">
+              <select id="dropdown" name="currentPos" class="dropdown">
+                <option disabled value>Don't Lie Weeb</option>
+              <option value="Naruto">I watched Naruto once</option>
+              <option value="Casual">Casual</option>
+              <option value="Everyday">I watch it everyday<!--its everyday bro--></option>
+              <option value="Otaku">Otaku</option>
+              <option value="Japanese">I'm actually half japanese</option>
+              </select>
+              </div>
+              </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="userRating">How likely is it that you would recommend an anime to a friend?</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style:none;">
+                  <li class="radio"><label>All the time<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+                  <li class="radio"><label>Only if they watch anime<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+                  <li class="radio"><label>Never<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+                </ul>
+                </div>
+                </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="most-like">Which is your Favorite anime-genre</label>
+            </div>
+              <div class="rightTab">
+              <select id="most-like" name="mostLike" class="dropdown">
+                <option disabled selected value>Please chose one</option>
+                <option value="Shounen">Shounen</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="preferences">Series That Should Be Added To The Site<br>You can chose more than one:</label>
+            </div>
+            <div class="rightTab">
+              <ul id="preferences" style="list-style:none;">
+
+                <li class="checkbox"><Label><input name="prefer"  value="1" type="checkbox" classs="userRatings">Bleach</label></li>
+
+                <li class="checkbox"><Label><input name="prefer"  value="2" type="checkbox" classs="userRatings">Naruto</label></li>
+
+                <li class="checkbox"><Label><input name="prefer"  value="3" type="checkbox" classs="userRatings">One-Piece</label></li>
+             </ul>
+           </div>
+         </div>
+         <div class="rowTab">
+           <div class="labels">
+             <label for="comments">Any comments or Suggestions?</label>
+           </div>
+           <div class="rightTab">
+             <textarea id="comments" class="input-field"
+             style="height:50px;resize:vertical;" name="comment"
+             placeholder="Enter your comment here..."></textarea>
+           </div>
+         </div>
+         <button id="submit" type="submit">Submit</button>
+       </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
+
+  </body>
+</html>
